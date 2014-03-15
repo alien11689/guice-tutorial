@@ -6,13 +6,13 @@ import org.junit.Test;
 /**
  * Created by alien on 15.03.14.
  */
-public class UserControllerIT {
+public class PersonControllerIT {
 
     @Test
-    public void shouldGetUserControllerFromInjectorAndPersistUser(){
+    public void shouldGetPersonControllerFromInjectorAndPersistPerson(){
         Injector injector = Guice.createInjector();
-        UserController userController = injector.getInstance(UserController.class);
-        User user = new User("John", "Smith", 25);
+        PersonController userController = injector.getInstance(PersonController.class);
+        Person user = new Person("John", "Smith", 25);
         userController.add(user);
     }
 }

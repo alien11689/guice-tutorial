@@ -3,12 +3,12 @@ package com.blogspot.przybyszd.guicetutorial.simplestinjection;
 /**
  * Created by alien on 15.03.14.
  */
-public class User {
+public class Person {
     private String firstName;
     private String lastName;
     private Integer age;
 
-    public User(final String firstName, final String lastName, final Integer age) {
+    public Person(final String firstName, final String lastName, final Integer age) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.age = age;

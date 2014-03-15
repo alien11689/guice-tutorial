@@ -5,18 +5,18 @@ import javax.inject.Inject;
 /**
  * Created by alien on 15.03.14.
  */
-public class UserController {
+public class PersonController {
 
-    private final UserValidator userValidator;
-    private final UserDao userDao;
+    private final PersonValidator userValidator;
+    private final PersonDao userDao;
 
     @Inject
-    public UserController(final UserValidator userValidator, final UserDao userDao){
+    public PersonController(final PersonValidator userValidator, final PersonDao userDao){
         this.userValidator = userValidator;
         this.userDao = userDao;
     }
 
-    public void add(final User user) throws UserValidationException{
+    public void add(final Person user) throws PersonValidationException{
         userValidator.validate(user);
         userDao.persist(user);
     }

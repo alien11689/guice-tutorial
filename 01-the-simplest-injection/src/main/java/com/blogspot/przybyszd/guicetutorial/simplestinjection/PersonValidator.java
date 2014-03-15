@@ -3,8 +3,8 @@ package com.blogspot.przybyszd.guicetutorial.simplestinjection;
 /**
  * Created by alien on 15.03.14.
  */
-public class UserValidator {
-    void validate(final User user) throws UserValidationException {
+public class PersonValidator {
+    void validate(final Person user) throws PersonValidationException {
         // TODO finish it
     }
 }
