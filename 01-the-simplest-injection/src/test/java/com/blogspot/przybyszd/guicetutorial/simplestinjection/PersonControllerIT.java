@@ -6,9 +6,6 @@ import org.junit.Test;
 
 import static junit.framework.Assert.assertNotNull;
 
-/**
- * Created by alien on 15.03.14.
- */
 public class PersonControllerIT {
 
     @Test
@@ -39,6 +36,6 @@ public class PersonControllerIT {
         //when
         PersonController userController = injector.getInstance(PersonController.class);
         //then
-        userController.add(user); // call without NPE
+        userController.add(user);
     }
 }
