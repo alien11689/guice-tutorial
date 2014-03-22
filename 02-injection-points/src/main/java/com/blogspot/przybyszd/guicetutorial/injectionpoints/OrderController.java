@@ -24,7 +24,8 @@ public class OrderController {
     }
 
     public void invokeProcessing(final Order order) {
-        //TODO finish it
-        throw new UnsupportedOperationException("No yet implemented");
+        orderValidator.validate(order);
+        orderDao.save(order);
+        orderProcessor.process(order);
     }
 }
