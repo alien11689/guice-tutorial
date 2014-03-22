@@ -22,4 +22,9 @@ public class OrderController {
     public void setOrderProcessor(final OrderProcessor orderProcessor) {
         this.orderProcessor = orderProcessor;
     }
+
+    public void invokeProcessing(final Order order) {
+        //TODO finish it
+        throw new UnsupportedOperationException("No yet implemented");
+    }
 }
