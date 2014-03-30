@@ -2,6 +2,8 @@ package com.blogspot.przybyszd.guicetutorial.providers;
 
 import com.google.inject.ProvidedBy;
 
+import java.util.Date;
+
 /**
  * Created by alien on 30.03.14.
  */
@@ -17,5 +19,13 @@ public class ReportSession {
 
     public boolean isInitialized() {
         return initialized;
+    }
+
+    public boolean report(final String reportMessage, final Date date) {
+        if(!initialized){
+            return false;
+        }
+        // ...
+        return true;
     }
 }

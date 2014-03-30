@@ -18,11 +18,11 @@ public class DateProviderTest {
     public void shouldGetAnotherTimeForEachGet() throws InterruptedException {
         // given
         Injector injector = Guice.createInjector();
-        Provider<Date> dateProvider = injector.getProvider(Date.class);
-        Date firstDate = dateProvider.get();
-        Thread.sleep(1);
+        Provider<Date> sut = injector.getProvider(Date.class);
         // when
-        Date secondDate = dateProvider.get();
+        Date firstDate = sut.get();
+        Thread.sleep(1);
+        Date secondDate = sut.get();
         // then
         assertNotNull(firstDate);
         assertNotNull(secondDate);

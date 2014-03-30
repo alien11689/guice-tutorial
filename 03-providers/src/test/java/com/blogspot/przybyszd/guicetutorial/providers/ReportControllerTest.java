@@ -9,15 +9,16 @@ import static org.junit.Assert.assertTrue;
 /**
  * Created by alien on 30.03.14.
  */
-public class ReportSessionProviderTest {
+public class ReportControllerTest {
+
     @Test
-    public void shouldInitReportSession() {
-        // given
+    public void shouldAddReportWithoutException(){
+        //given
         Injector injector = Guice.createInjector();
-        ReportSession sut = injector.getInstance(ReportSession.class);
-        // when
-        boolean result = sut.isInitialized();
-        // then
+        ReportController sut = injector.getInstance(ReportController.class);
+        //when
+        boolean result = sut.addReport("message");
+        //then
         assertTrue(result);
     }
 }
