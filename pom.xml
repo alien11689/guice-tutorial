@@ -12,6 +12,7 @@
         <module>01-the-simplest-injection</module>
         <module>02-injection-points</module>
         <module>03-providers</module>
+        <module>04-providers2</module>
     </modules>
 
     <build>
