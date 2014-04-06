@@ -6,6 +6,7 @@ import com.google.inject.Provider;
 import org.junit.Test;
 
 import static org.junit.Assert.assertNotEquals;
+import static org.junit.Assert.assertNotNull;
 
 /**
  * Created by alien on 05.04.14.
@@ -29,9 +30,8 @@ public class UserSessionTest {
         Injector injector = Guice.createInjector();
         Provider<UserSession> sut = injector.getProvider(UserSession.class);
         //when
-        UserSession userSession1 = sut.get();
-        UserSession userSession2 = sut.get();
+        UserSession userSession = sut.get();
         //then
-        assertNotEquals(userSession1, userSession2);
+        assertNotNull(userSession);
     }
 }
