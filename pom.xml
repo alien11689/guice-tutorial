@@ -13,6 +13,7 @@
         <module>02-injection-points</module>
         <module>03-providers</module>
         <module>04-providers2</module>
+        <module>05-interfaces-default-implementations</module>
     </modules>
 
     <build>
