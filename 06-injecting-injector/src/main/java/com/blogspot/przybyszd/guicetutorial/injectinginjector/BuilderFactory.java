@@ -7,7 +7,7 @@ import javax.inject.Inject;
 /**
  * Created by alien on 27.04.14.
  */
-public class Router {
+public class BuilderFactory {
     private Injector injector;
 
     public Injector getInjector() {
@@ -15,7 +15,7 @@ public class Router {
     }
 
     @Inject
-    public Router(final Injector injector) {
+    public BuilderFactory(final Injector injector) {
         this.injector = injector;
     }
 }

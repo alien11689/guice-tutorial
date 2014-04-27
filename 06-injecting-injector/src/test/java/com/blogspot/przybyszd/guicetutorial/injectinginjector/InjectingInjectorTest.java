@@ -27,8 +27,8 @@ public class InjectingInjectorTest {
         //given
         Injector sut = Guice.createInjector();
         //when
-        Router router = sut.getInstance(Router.class);
+        BuilderFactory builderFactory = sut.getInstance(BuilderFactory.class);
         //then
-        assertTrue(router.getInjector() instanceof Injector);
+        assertTrue(builderFactory.getInjector() instanceof Injector);
     }
 }
