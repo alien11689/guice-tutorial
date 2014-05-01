@@ -1,6 +1,7 @@
 package com.blogspot.przybyszd.guicetutorial.module;
 
 import com.google.inject.AbstractModule;
+import com.google.inject.Singleton;
 
 public class MyModule extends AbstractModule{
     @Override
@@ -14,5 +15,10 @@ public class MyModule extends AbstractModule{
         bind(ThirdClass.class).toProvider(ThirdClassProvider.class);
         bind(FourthClass.class).toInstance(new FourthClass(new Dependency()));
         bind(SomeClass.class).to(FifthClass.class);
+        try {
+            bind(SixthClass.class).toConstructor(SixthClass.class.getConstructor(Dependency.class)).in(Singleton.class);
+        } catch(NoSuchMethodException e) {
+            e.printStackTrace();
+        }
     }
 }
