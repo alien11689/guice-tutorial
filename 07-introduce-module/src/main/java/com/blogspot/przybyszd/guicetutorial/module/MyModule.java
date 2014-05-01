@@ -12,5 +12,7 @@ public class MyModule extends AbstractModule{
             e.printStackTrace();
         }
         bind(ThirdClass.class).toProvider(ThirdClassProvider.class);
+        bind(FourthClass.class).toInstance(new FourthClass(new Dependency()));
+        
     }
 }
