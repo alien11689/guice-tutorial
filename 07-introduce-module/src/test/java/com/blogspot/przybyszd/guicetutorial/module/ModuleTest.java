@@ -53,9 +53,10 @@ public class ModuleTest {
     @Test
     public void shouldGetInstanceDefinedAsInterfaceImplementation(){
         //when
-        FifthClass result = sut.getInstance(FifthClass.class);
+        SomeClass result = sut.getInstance(SomeClass.class);
         //then
         assertNotNull(result);
+        assertEquals(FifthClass.class,result.getClass());
     }
 
     @Test
