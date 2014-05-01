@@ -13,6 +13,6 @@ public class MyModule extends AbstractModule{
         }
         bind(ThirdClass.class).toProvider(ThirdClassProvider.class);
         bind(FourthClass.class).toInstance(new FourthClass(new Dependency()));
-        
+        bind(SomeClass.class).to(FifthClass.class);
     }
 }
