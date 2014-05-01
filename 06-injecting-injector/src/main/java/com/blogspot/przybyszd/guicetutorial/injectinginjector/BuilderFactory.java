@@ -7,9 +7,6 @@ import com.google.inject.Injector;
 
 import javax.inject.Inject;
 
-/**
- * Created by alien on 27.04.14.
- */
 public class BuilderFactory {
     private Injector injector;
 

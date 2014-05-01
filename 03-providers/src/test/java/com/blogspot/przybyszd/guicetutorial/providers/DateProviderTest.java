@@ -10,9 +10,6 @@ import java.util.Date;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertNotNull;
 
-/**
- * Created by alien on 30.03.14.
- */
 public class DateProviderTest {
     @Test
     public void shouldGetAnotherTimeForEachGet() throws InterruptedException {

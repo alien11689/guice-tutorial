@@ -7,9 +7,6 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-/**
- * Created by alien on 05.04.14.
- */
 public class SequenceGeneratorTest {
 
     @Test

@@ -2,9 +2,6 @@ package com.blogspot.przybyszd.guicetutorial.providers;
 
 import com.google.inject.Provider;
 
-/**
- * Created by alien on 30.03.14.
- */
 public class ReportSessionFactory implements Provider<ReportSession> {
 
     @Override

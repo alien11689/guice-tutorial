@@ -6,9 +6,6 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertTrue;
 
-/**
- * Created by alien on 13.04.14.
- */
 public class InterfaceDefaultImplementationTest {
     @Test
     public void shouldGetImplementationOfInterface(){

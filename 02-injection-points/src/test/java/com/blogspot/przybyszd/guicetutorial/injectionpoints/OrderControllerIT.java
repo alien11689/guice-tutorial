@@ -4,9 +4,6 @@ import com.google.inject.Guice;
 import com.google.inject.Injector;
 import org.junit.Test;
 
-/**
- * Created by alien on 22.03.14.
- */
 public class OrderControllerIT {
     @Test
     public void shouldInjectAllDependency() {
