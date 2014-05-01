@@ -15,6 +15,7 @@
         <module>04-providers2</module>
         <module>05-interfaces-default-implementations</module>
         <module>06-injecting-injector</module>
+        <module>07-introduce-module</module>
     </modules>
 
     <build>
