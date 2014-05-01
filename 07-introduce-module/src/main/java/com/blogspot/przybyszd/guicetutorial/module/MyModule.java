@@ -11,5 +11,6 @@ public class MyModule extends AbstractModule{
             // But i know it exists
             e.printStackTrace();
         }
+        bind(ThirdClass.class).toProvider(ThirdClassProvider.class);
     }
 }
