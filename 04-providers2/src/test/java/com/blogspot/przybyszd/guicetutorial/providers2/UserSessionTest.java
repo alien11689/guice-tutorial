@@ -8,9 +8,6 @@ import org.junit.Test;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertNotNull;
 
-/**
- * Created by alien on 05.04.14.
- */
 public class UserSessionTest {
 
     @Test

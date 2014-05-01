@@ -2,9 +2,6 @@ package com.blogspot.przybyszd.guicetutorial.injectionpoints;
 
 import javax.inject.Inject;
 
-/**
- * Created by alien on 22.03.14.
- */
 public class OrderController {
     private final OrderDao orderDao;
 

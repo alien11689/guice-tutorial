@@ -4,9 +4,6 @@ import com.google.inject.ProvidedBy;
 
 import java.util.Date;
 
-/**
- * Created by alien on 30.03.14.
- */
 @ProvidedBy(ReportSessionFactory.class)
 public class ReportSession {
     private boolean initialized;

@@ -2,9 +2,6 @@ package com.blogspot.przybyszd.guicetutorial.simplestinjection;
 
 import javax.inject.Inject;
 
-/**
- * Created by alien on 15.03.14.
- */
 public class PersonController {
 
     private final PersonValidator userValidator;

@@ -5,9 +5,6 @@ import com.google.inject.Provider;
 import javax.inject.Inject;
 import java.util.Date;
 
-/**
- * Created by alien on 30.03.14.
- */
 public class ReportController {
 
     private final ReportSession reportSession;
