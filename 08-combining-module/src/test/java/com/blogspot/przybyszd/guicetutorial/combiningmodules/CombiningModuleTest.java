@@ -1,4 +1,4 @@
-package com.blogspot.przybyszd.guicetutorial.joiningmodules;
+package com.blogspot.przybyszd.guicetutorial.combiningmodules;
 
 import com.google.inject.CreationException;
 import com.google.inject.Guice;
@@ -9,7 +9,7 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
-public class JoiningModuleTest {
+public class CombiningModuleTest {
     @Test
     public void shouldJoinTwoDisjointModules(){
         //when

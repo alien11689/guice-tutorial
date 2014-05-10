@@ -1,4 +1,4 @@
-package com.blogspot.przybyszd.guicetutorial.joiningmodules;
+package com.blogspot.przybyszd.guicetutorial.combiningmodules;
 
 public class SessionFactoryImpl implements SessionFactory {
 }

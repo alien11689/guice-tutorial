@@ -1,4 +1,4 @@
-package com.blogspot.przybyszd.guicetutorial.joiningmodules;
+package com.blogspot.przybyszd.guicetutorial.combiningmodules;
 
 import com.google.inject.AbstractModule;
 
