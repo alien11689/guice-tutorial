@@ -17,6 +17,7 @@
         <module>06-injecting-injector</module>
         <module>07-introduce-module</module>
         <module>08-combining-module</module>
+        <module>09-provider-in-module</module>
     </modules>
 
     <build>
